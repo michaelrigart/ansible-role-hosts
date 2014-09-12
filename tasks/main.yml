@@ -1,0 +1,9 @@
+---
+
+- debug: var=hostvars
+- name: Hosts file
+  template:
+    src: hosts.j2
+    dest: /etc/hosts
+    mode: 0644
+  tags: configuration

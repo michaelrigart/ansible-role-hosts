@@ -1,0 +1,15 @@
+127.0.0.1       localhost
+127.0.1.1       {{ inventory_hostname_short }}
+
+{{ ansible_default_ipv4.address }} {{ inventory_hostname }} {{ inventory_hostname_short }}
+
+{% for host in hosts_ipv4 %}
+{{ host.ip }}   {{ host.fqdn }} {{ host.hostname }}
+{% endfor %}
+
+{% if ansible_default_ipv6 %}
+{{ ansible_default_ipv6.address }} {{ inventory_hostname }} {{ inventory_hostname_short }}
+{% endif %}
+{% for host in hosts_ipv6 %}
+{{ host.ip }}   {{ host.fqdn }} {{ host.hostname }}
+{% endfor %}
