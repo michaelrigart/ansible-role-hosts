@@ -1,6 +1,5 @@
 ---
 
-- debug: var=hostvars
 - name: Hosts file
   template:
     src: hosts.j2
