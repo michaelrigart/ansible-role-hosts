@@ -1,6 +1,6 @@
 Ansible Hosts Role
 ==================
-[![Build Status](https://travis-ci.org/michaelrigart/ansible-role-hosts.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-hosts)
+[![Build Status](https://semaphoreci.com/api/v1/projects/ff4aaa39-1fde-457e-8c2e-7c3f7b7a9b10/459455/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-hosts) [![Build Status](https://travis-ci.org/michaelrigart/ansible-role-hosts.svg?branch=master)](https://travis-ci.org/michaelrigart/ansible-role-hosts)
 
 An ansible role for configuring the /etc/hosts file. It will automatically set your default ipv4 and ipv6 address using the inventory_hostname and inventory_hostname_short variables.
 All extra hosts need to be listed in the variables below.
